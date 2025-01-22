@@ -1,0 +1,18 @@
+nav{
+    background-color: rgb(188, 188, 188);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 5px 10px;
+}

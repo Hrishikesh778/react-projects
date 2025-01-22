@@ -1,0 +1,20 @@
+.experienceContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;  
+}
+
+.experience_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(188, 188, 188);
+    height: 50px;
+    margin: 10px;
+    /* align-items: center; */
+}
+
+.insideEdu{
+    display: flex;
+    justify-content: space-between;
+}
