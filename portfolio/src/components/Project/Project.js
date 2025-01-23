@@ -7,7 +7,7 @@ function Project(props) {
         <>
 
             <div className="projectContainer" id="proj">
-                <h1 className="heading">Project</h1>
+                <h1 className="heading">Projects</h1>
                 <div className="Projects">
                     {
                         projArr.map((val)=>{

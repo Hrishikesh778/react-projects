@@ -1,5 +1,5 @@
 nav{
-    background-color: rgb(188, 188, 188);
+    background-color: rgb(193, 225, 226);
     display: flex;
     justify-content: space-around;
     height: 50px;
@@ -15,4 +15,9 @@ nav ul{
 
 nav ul li{
     margin: 5px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
