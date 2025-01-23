@@ -3,7 +3,7 @@ import "./Main.css"
 function Main(props){
     return(
         <>
-         <div className="MainContainer" id="edu">
+         <div className="MainContainer">
             <div className="maintext">
                 <h1>{props.maintext}</h1>
                 <h1>{props.mainsubtext}</h1>
