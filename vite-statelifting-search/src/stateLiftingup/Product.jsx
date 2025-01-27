@@ -7,7 +7,7 @@ function Product({ data1, mdata }) {
             {
 
                 mdata.map((val) => {
-                    if (val.movieName.toLowerCase() == data1) {
+                    if (val.movieName.toLowerCase() == String(data1).toLowerCase()) {
                         // console.log(val.movieName)
                         return (
                             <>
