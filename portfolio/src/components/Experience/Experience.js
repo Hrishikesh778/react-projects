@@ -6,6 +6,7 @@ function Experience(props) {
 
     return (
         <>
+            
             <div className="experienceContainer" id="Exp">
                 <h1 className="heading">Experience</h1>
 
@@ -14,6 +15,9 @@ function Experience(props) {
                         expArr.map((val) => {
                             return (
                                 <>
+                                    <div className="imgdiv">
+                                    <img style={{ height: '100px', width: '100px' }} src={val.image} />
+                                    </div>
                                     <div className="experience_box">
                                         <div className="insideEdu">
                                             <div>{val.name}</div>

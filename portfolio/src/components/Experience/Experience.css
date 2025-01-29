@@ -14,10 +14,21 @@
     border-radius: 5px;
     height: 50px;
     margin: 10px;
+    width: 90%
     /* align-items: center; */
 }
 
 .insideEdu{
     display: flex;
     justify-content: space-between;
+}
+
+.experiences{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgdiv{
+    width: 10%;
+    padding: 20px;
 }

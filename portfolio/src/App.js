@@ -61,8 +61,8 @@ function App() {
     {
       name: ".NET Developer| Renaissance Insurance Services PVT LTD",
       year: "Mar. 2021- Mar. 2022",
-      description: "•	Worked as a ASP.Net Software Developer for 1 Year. Where I maintained and worked on their takemyinsurance.com website."
-
+      description: "•	Worked as a ASP.Net Software Developer for 1 Year. Where I maintained and worked on their takemyinsurance.com website.",
+      image: "./images/experience.png"
     }
   ]
 

@@ -5,7 +5,7 @@ function Nav(){
         <>
         <nav>
             <div>
-                <h1>Portfolio</h1>
+                <h1><span style={{color:"red"}}>H</span>rishikesh</h1>
             </div>
             <ul>
                 <li><a href="#">Home</a></li>
