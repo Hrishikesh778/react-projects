@@ -39,6 +39,14 @@ h3 {
     border: 0px;
 
 }
+#submit2 {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(151, 148, 148);
+    color: aliceblue;
+    border: 0px;
+
+}
 
 input[type=text],
 input[type=email],
@@ -83,6 +91,10 @@ input {
 
 form{
     width: 90%;
+}
+
+.miniText{
+    color: red;
 }
 
 @media screen and (max-width:500px) {
