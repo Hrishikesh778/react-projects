@@ -21,3 +21,11 @@ a{
     text-decoration: none;
     color: black;
 }
+
+@media screen and (max-width:1296px){
+    nav ul {
+        display: flex;
+        list-style: none;
+        display: none;
+    }
+}

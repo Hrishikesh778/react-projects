@@ -16,3 +16,15 @@
     align-items: center;
     text-align: center;
 }
+
+@media screen and (max-width:1296px) {
+
+    .AboutContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        border-radius: 5px;
+        background-color: rgb(193, 225, 226);
+    }
+    
+}
