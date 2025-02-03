@@ -18,7 +18,7 @@ function App() {
   let SkillArr = [
     {
       skill: 'HTML',
-      image: "./images/html.png"
+      image: "./images/html5.png"
     },
     {
       skill: 'CSS',
@@ -26,11 +26,11 @@ function App() {
     },
     {
       skill: 'JS',
-      image: "./images/javascript.webp"
+      image: "./images/javas.png"
     },
     {
       skill: 'Jquery',
-      image: "./images/jquery.png"
+      image: "./images/jquery1.png"
     },
     {
       skill: 'ReactJS',

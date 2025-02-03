@@ -1,5 +1,6 @@
 nav{
-    background-color: rgb(193, 225, 226);
+    /* background-color: rgb(193, 225, 226); */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     display: flex;
     justify-content: space-around;
     height: 50px;

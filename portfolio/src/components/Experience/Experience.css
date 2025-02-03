@@ -3,7 +3,8 @@
     flex-direction: column;
     margin: 100px;
     border-radius: 5px;
-    background-color: rgb(193, 225, 226); 
+    /* background-color: rgb(193, 225, 226);  */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .experience_box{
