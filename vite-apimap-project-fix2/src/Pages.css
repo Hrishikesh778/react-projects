@@ -1,0 +1,128 @@
+.cbox{
+    width: 300px;
+    /* height: 200px; */
+    background-color: rgb(239, 239, 239);
+    border-radius: 20px;
+    margin: 20px;
+    
+}
+
+.mbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.firstdiv{
+    /* height: 50%; */
+    margin: 20px;
+}
+
+.seconddiv{
+    background-color: rgb(233, 232, 232);
+    /* height: 50%; */
+    display: flex;
+    text-align: center;
+}
+
+.indiv{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.thirddiv{
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(233, 232, 232);
+}
+
+.thirddiv span a{
+    text-decoration: none;
+    color: black;
+}
+
+.cbtn{
+    height: 100%;
+    width: 100%;
+}
+
+.imgdiv{
+    height: 400px;
+    width: 400px;
+}
+
+
+.pmaindiv{
+   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+   
+
+}
+
+.psmaindiv{
+    /* height: 300px; */
+    width: 200px;
+    background-color: rgb(223, 223, 223);
+    margin: 20px;
+    text-align: center;
+}
+.psfirstdiv{
+    margin: 10px;
+}
+
+.pmmaindiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pmindiv{
+    /* height: 300px; */
+    width:300px;
+    margin: 20px;
+    background-color: rgb(223, 223, 223);
+}
+
+.pmfirstdiv{
+    text-align: center;
+}
+
+.lmmaindiv{
+    background-color:rgb(223, 223, 223);
+    width:95%;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.lmmasterdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lmfirstdiv{
+    text-align: center;
+    border-bottom: 1px solid rgb(146, 146, 146);
+    padding: 20px;
+}
+
+.lmseconddiv{
+    padding: 20px;
+}
+
+.indiv button{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(146, 146, 146);
+    border: none;
+}
