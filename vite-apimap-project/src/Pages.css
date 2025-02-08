@@ -119,3 +119,14 @@
 .lmseconddiv{
     padding: 20px;
 }
+
+.indiv button{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(146, 146, 146);
+    border: none;
+}
+
+.loading{
+    text-align: center;
+}
