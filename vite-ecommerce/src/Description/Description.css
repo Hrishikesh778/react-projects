@@ -1,0 +1,22 @@
+.mainContainer{
+    width: 80%;
+    height: 500px;
+    background-color: aqua;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.imgContainer{
+    width:50%;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+.descContainer{
+    width:50%;
+    height: 500px;
+    background-color: rgb(55, 226, 43);
+
+}
