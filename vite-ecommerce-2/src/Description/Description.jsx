@@ -22,6 +22,23 @@ function Description() {
 
     console.log(singleData,"singleData")
 
+
+    function addToCart(val){
+      console.log(val,"val")
+      let newData ={...val,addToCart:true}
+      console.log(newData,"newdata")
+
+        updateData(val.id,newData)
+    }
+
+    function updateData(id,newData){
+      axios.put(`http://localhost:5000/products/${id}`,newData)
+      .then((resp)=>{
+        console.log(resp.data,"cart data")
+      })
+
+    }
+
   return (
     <div>
       <h1>Desc</h1>
@@ -55,7 +72,8 @@ function Description() {
                         <button onClick={()=>{setCount(count+1)}}>+</button>
                         {count}
                         <button onClick={()=>{setCount(count-1)}}>-</button><br/>
-                        <button >wishlist</button>  <button >Add to cart</button>
+                        <button >wishlist</button>  
+                        <button onClick={()=>{addToCart(val)}}>Add to cart</button>
                     </div>
                 </div>
             </>

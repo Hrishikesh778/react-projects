@@ -7,17 +7,17 @@ import FetchApi from "../CustomHook/useFetchApi"
 
 function Nav() {
 
-    let { setData , data} = useContext(createStore)
+    let { setData, data } = useContext(createStore)
     let [apiData, setApiData] = useState([])
     let [filterData, setFilterData] = useState([])
     let { pathname } = useLocation()
 
     let returnData = FetchApi("http://localhost:5000/products")
     console.log(returnData, "returnfetchdata")
-   
+
     useEffect(() => {
-      setApiData(returnData)
-      setFilterData(returnData)
+        setApiData(returnData)
+        setFilterData(returnData)
     }, [returnData])
 
     // useEffect(() => {
@@ -43,11 +43,11 @@ function Nav() {
 
     function showSearchBox(e) {
         setData(e.target.value)
-        debugger
+        // debugger
         if (pathname.includes("/productdesc")) {
 
             document.getElementById('pp').style.display = "block"
-            
+
 
         } else {
             // setData(e.target.value)
@@ -61,6 +61,10 @@ function Nav() {
                 <li>
                     <Link to="/" className='link'> Home</Link>
 
+                </li>
+                <li>
+
+                    <Link to="/cart" className="link">Cart</Link>
                 </li>
                 <li>
                     {/* <div className="Serdiv">

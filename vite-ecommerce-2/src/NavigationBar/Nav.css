@@ -27,6 +27,11 @@
     cursor: pointer;
 }
 
+.link{
+    text-decoration: none;
+    list-style-type:none;
+}
+
 .searchBox ul li:hover{
     background: #e9f3ff;
 }
