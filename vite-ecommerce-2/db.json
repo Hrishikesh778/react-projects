@@ -14,7 +14,7 @@
       "description": "Women Peach-Coloured Floral Kurta with Trousers & Dupatta",
       "quantity": 1,
       "addtowish": false,
-      "addToCart": false,
+      "addToCart": true,
       "id": 1
     },
     {

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
 import createStore from "../Context/createStore"
 import "./Nav.css"
 import axios from "axios"
@@ -6,7 +6,7 @@ import { Link, useLocation, useParams } from "react-router-dom"
 import FetchApi from "../CustomHook/useFetchApi"
 
 function Nav() {
-
+    let ref1=useRef();
     let { setData, data } = useContext(createStore)
     let [apiData, setApiData] = useState([])
     let [filterData, setFilterData] = useState([])
@@ -44,14 +44,15 @@ function Nav() {
     function showSearchBox(e) {
         setData(e.target.value)
         // debugger
-        if (pathname.includes("/productdesc")) {
+        if (pathname=="/") {
 
-            document.getElementById('pp').style.display = "block"
-
+            // document.getElementById('pp').style.display = "block"
+            ref1.current.style.display="none"
 
         } else {
             // setData(e.target.value)
-            document.getElementById('pp').style.display = "none"
+            // document.getElementById('pp').style.display = "none"
+             ref1.current.style.display="block"
         }
     }
 
@@ -76,7 +77,7 @@ function Nav() {
                     <input type="search" onChange={(e) => { showSearchBox(e) }} />
                     {
                         filterData != "" ?
-                            <div className='searchBox' id='pp'>
+                            <div ref={ref1} className='searchBox' id='pp'>
                                 <ul className="searchdul">
                                     {
                                         filterData.map((val) => {
