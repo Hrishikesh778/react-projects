@@ -1,21 +1,9 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import FetchApi from "../CustomHook/useFetchApi";
 import axios from "axios";
 
-
-function Addtocart() {
-    let [cart, setCart] = useState([]);
-    // let [data1, setData1] = useState("");
-
-    // let [name,setName]= useState("");
-    // let [price,setPrice]= useState("");
-    // let [image,setImage]= useState("");
-    // let [bestseller,setBestseller]= useState("");
-    // let [discount,setDiscount]= useState("");
-    // let [description,setDescription]= useState("");
-    // let [quantity,setQuantity]= useState("");
-    // let [addToCart,setAddtocart]= useState("");
-
+function Addtowishlist() {
+    let [wishlist, setWishlist] = useState([]);
 
     let returnData = FetchApi("http://localhost:5000/products")
     console.log(returnData, "returnfetchdata")
@@ -23,14 +11,14 @@ function Addtocart() {
     useEffect(() => {
 
         let filterdata = returnData.filter((val) => {
-            return val.addToCart == true
+            return val.addtowish == true
         })
-        setCart(filterdata)
+        setWishlist(filterdata)
 
     }, [returnData])
 
-    function removeFromCart(val) {
-        // debugger
+
+    function removeFromwish(val){
         let id = val.id;
 
         let name = val.name
@@ -40,8 +28,8 @@ function Addtocart() {
         let discount = val.discount
         let description = val.description
         let quantity = val.quantity
-        let addtowish=val.addtowish
-        let addToCart = false
+        let addtowish=false
+        let addToCart = val.addtowish
 
         // setName(val.name)
         // setPrice(val.price)
@@ -58,22 +46,22 @@ function Addtocart() {
         axios.put(`http://localhost:5000/products/${id}`, { name, price, image, bestseller, discount, description, quantity,addtowish, addToCart })
             .then((response) => {
                 console.log(response, "response")
-                getdata();
+                // getdata();
             })
 
-       
-        // console.log(name, "from removecart")
     }
 
+
     return (
+
         <>
-            <h1>Cart</h1>
+            <h1>Wishlist</h1>
             {
-                cart.map((val) => {
+                wishlist.map((val) => {
                     return (
                         <>
                             <h1>{val.name}</h1>
-                            <button onClick={() => { removeFromCart(val) }}>Remove</button>
+                            <button onClick={() => { removeFromwish(val) }}>Remove</button>
 
                         </>
                     )
@@ -81,8 +69,6 @@ function Addtocart() {
             }
         </>
     )
-
-
 }
 
-export default Addtocart
+export default Addtowishlist

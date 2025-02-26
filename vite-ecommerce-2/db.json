@@ -1,7 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
       "name": "Libas",
       "price": 2899,
       "image": [
@@ -14,10 +13,11 @@
       "discount": 50,
       "description": "Women Peach-Coloured Floral Kurta with Trousers & Dupatta",
       "quantity": 1,
-      "addToCart": true
+      "addtowish": false,
+      "addToCart": false,
+      "id": 1
     },
     {
-      "id": 2,
       "name": "kasee",
       "price": 1719,
       "image": [
@@ -29,10 +29,12 @@
       "bestseller": 4.4,
       "discount": 76,
       "description": "Solid Beads and Stones Saree",
-      "quantity": 1
+      "quantity": 1,
+      "addtowish": false,
+      "addToCart": false,
+      "id": 2
     },
     {
-      "id": 3,
       "name": "Indo Era",
       "price": 1679,
       "image": [
@@ -44,10 +46,12 @@
       "bestseller": 4.3,
       "discount": 79,
       "description": "Ethnic Motifs Embroidered Regular Thread Work Kurta with Salwar & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "addtowish": false,
+      "addToCart": false,
+      "id": 3
     },
     {
-      "id": 4,
       "name": "KALINI",
       "price": 1248,
       "image": [
@@ -60,7 +64,8 @@
       "discount": 75,
       "description": "Bandhani Embroidered Regular Sequinned Kurta With Trouser & Dupatta",
       "quantity": 1,
-      "addToCart": true
+      "addToCart": false,
+      "id": 4
     },
     {
       "id": 5,
@@ -78,7 +83,6 @@
       "quantity": 1
     },
     {
-      "id": 6,
       "name": "Sangria",
       "price": 2194,
       "image": [
@@ -90,7 +94,9 @@
       "bestseller": 4.1,
       "discount": 67,
       "description": "Embroidered Boat-Neck Kurta With Trousers & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "addToCart": false,
+      "id": 6
     },
     {
       "id": 7,

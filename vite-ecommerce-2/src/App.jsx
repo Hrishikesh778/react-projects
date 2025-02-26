@@ -8,6 +8,7 @@ import Description from './Description/Description'
 import ProviderFunction from './Context/ProviderFunction'
 import Nav from './NavigationBar/Nav'
 import Addtocart from './Cart/Addtocart'
+import Addtowishlist from './Wishlist/Addtowishlist'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Product />} />
             <Route path='/cart' element={<Addtocart/>}/>
+            <Route path='/wishlist' element={<Addtowishlist/>}/>
             <Route path="/productdesc/:id" element={<Description />} />
           </Routes>
         </ProviderFunction>

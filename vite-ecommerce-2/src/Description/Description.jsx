@@ -8,6 +8,11 @@ function Description() {
   let param = useParams()
   let id = param.id
   console.log(param,"param")
+
+
+  let[addtocart1,setAddtocart1]=useState(false)
+  let[addtowish1,setaddtowish1]=useState(false)
+
   let [singleData, setsingleData] = useState([])
   let [image, setImage] = useState("")
 
@@ -24,11 +29,22 @@ function Description() {
 
 
     function addToCart(val){
+      debugger
+      setAddtocart1(true)
       console.log(val,"val")
-      let newData ={...val,addToCart:true}
+      let newData ={...val,addToCart:addtocart1}
       console.log(newData,"newdata")
 
         updateData(val.id,newData)
+    }
+
+
+    function addtowish(val){
+      debugger
+      setaddtowish1(true)
+      let newData={...val,addtowish:addtowish1}
+      console.log(newData,"wishlistnew data")
+      updateData(val.id,newData)
     }
 
     function updateData(id,newData){
@@ -72,7 +88,7 @@ function Description() {
                         <button onClick={()=>{setCount(count+1)}}>+</button>
                         {count}
                         <button onClick={()=>{setCount(count-1)}}>-</button><br/>
-                        <button >wishlist</button>  
+                        <button onClick={()=>{addtowish(val)}}>wishlist</button>  
                         <button onClick={()=>{addToCart(val)}}>Add to cart</button>
                     </div>
                 </div>

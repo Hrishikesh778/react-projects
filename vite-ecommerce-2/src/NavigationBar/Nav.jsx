@@ -67,6 +67,10 @@ function Nav() {
                     <Link to="/cart" className="link">Cart</Link>
                 </li>
                 <li>
+
+                    <Link to="/wishlist" className="link">Wishlist</Link>
+                </li>
+                <li>
                     {/* <div className="Serdiv">
                         <div className="row"> */}
                     <input type="search" onChange={(e) => { showSearchBox(e) }} />

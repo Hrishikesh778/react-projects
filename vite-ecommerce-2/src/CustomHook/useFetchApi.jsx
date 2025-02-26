@@ -5,7 +5,7 @@ function FetchApi(url) {
  let [fetchData,setfetchData]=useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:5000/products")
+        axios.get(url)
             .then((resp) => {
                 console.log(resp.data, "resp")
                 setfetchData(resp.data)
