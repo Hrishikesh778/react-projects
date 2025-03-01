@@ -1,0 +1,12 @@
+.addtocartwish{
+    height: 200px;
+    width: 200px;
+    background-color: burlywood;
+    margin: 3px;
+}
+
+.addtowmaindiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

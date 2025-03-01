@@ -30,7 +30,7 @@ function Product() {
 
   useEffect(() => {
     let filterData1 = apiData.filter((val) => {
-      return val.name.toLowerCase().includes(data.toLowerCase())
+      return val.name.toLowerCase().includes(data.toLowerCase()) || String(val.id).includes(data.toLowerCase())
 
     })
     console.log(filterData1, "filterData1")
@@ -39,6 +39,16 @@ function Product() {
 
   return (
     <div>
+      <div>
+        <input type="checkbox" value="" id="3" onclick="clothfilter('all')" />
+        <label for="3">All</label> 
+
+        <input type="checkbox" name="cloth" value="" id="1" onclick="clothfilter('dress')" />
+        <label for="1">Dress</label> 
+
+        <input type="checkbox" name="cloth" value="" id="2" onclick="clothfilter('sarees')" />
+        <label for="2">Sarees</label>
+      </div>
       <h1>Product</h1>
       <div className='boxContainer'>
         {

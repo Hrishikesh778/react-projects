@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "id": 1,
       "name": "Libas",
       "price": 2899,
       "image": [
@@ -13,11 +14,12 @@
       "discount": 50,
       "description": "Women Peach-Coloured Floral Kurta with Trousers & Dupatta",
       "quantity": 1,
+      "addToCart": false,
       "addtowish": false,
-      "addToCart": true,
-      "id": 1
+      "category":"dress"
     },
     {
+      "id": 2,
       "name": "kasee",
       "price": 1719,
       "image": [
@@ -32,9 +34,10 @@
       "quantity": 1,
       "addtowish": false,
       "addToCart": false,
-      "id": 2
+      "category":"saree"
     },
     {
+      "id": 3,
       "name": "Indo Era",
       "price": 1679,
       "image": [
@@ -47,11 +50,12 @@
       "discount": 79,
       "description": "Ethnic Motifs Embroidered Regular Thread Work Kurta with Salwar & Dupatta",
       "quantity": 1,
-      "addtowish": false,
       "addToCart": false,
-      "id": 3
+      "addtowish": false,
+      "category":"dress"
     },
     {
+      "id": 4,
       "name": "KALINI",
       "price": 1248,
       "image": [
@@ -65,7 +69,8 @@
       "description": "Bandhani Embroidered Regular Sequinned Kurta With Trouser & Dupatta",
       "quantity": 1,
       "addToCart": false,
-      "id": 4
+      "addtowish": false,
+      "category":"dress"
     },
     {
       "id": 5,
@@ -80,9 +85,11 @@
       "bestseller": 3.6,
       "discount": 20,
       "description": "Women Kurta with Trousers & Dupatta set",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
+      "id": 6,
       "name": "Sangria",
       "price": 2194,
       "image": [
@@ -95,8 +102,7 @@
       "discount": 67,
       "description": "Embroidered Boat-Neck Kurta With Trousers & Dupatta",
       "quantity": 1,
-      "addToCart": false,
-      "id": 6
+      "category":"dress"
     },
     {
       "id": 7,
@@ -111,7 +117,8 @@
       "bestseller": 4.3,
       "discount": 75,
       "description": "Anarkali Pure Cotton Kurta With Trousers & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 8,
@@ -126,7 +133,8 @@
       "bestseller": 3.9,
       "discount": 75,
       "description": "Anarkali Pure Cotton Kurta With Trousers & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 9,
@@ -141,7 +149,10 @@
       "bestseller": 4.3,
       "discount": 70,
       "description": "Floral Embroidered Thread Work A-Line Kurta With Trousers & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "addToCart": false,
+      "addtowish": false,
+      "category":"dress"
     },
     {
       "id": 10,
@@ -156,7 +167,8 @@
       "bestseller": 4,
       "discount": 70,
       "description": "Bandhani Printed Round Neck Straight Kurta With Trousers & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 11,
@@ -171,7 +183,8 @@
       "bestseller": 3.9,
       "discount": 70,
       "description": "Navy Blue Ethnic Motifs Embroidered A-Line Kurta With Trouser & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 12,
@@ -186,7 +199,8 @@
       "bestseller": 4.6,
       "discount": 73,
       "description": "Black & Orange Geometric Woven Design Cotton Anarkali Kurta with Trousers & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 13,
@@ -201,7 +215,8 @@
       "bestseller": 3.8,
       "discount": 60,
       "description": "Women Ethnic Motifs Embroidered Regular Kurta With Trousers & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 14,
@@ -216,7 +231,9 @@
       "bestseller": 4.1,
       "discount": 68,
       "description": "Floral Woven Design V-Neck Straight Kurta With Trouser & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "addToCart": false,
+      "category":"dress"
     },
     {
       "id": 15,
@@ -231,7 +248,8 @@
       "bestseller": 3.1,
       "discount": 68,
       "description": "Regular Gotta Patti Kurta with Trousers & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 16,
@@ -246,7 +264,8 @@
       "bestseller": 4.5,
       "discount": 75,
       "description": "Regular Gotta Patti Kurta with Trousers & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 17,
@@ -261,7 +280,8 @@
       "bestseller": 3.8,
       "discount": 78,
       "description": "Jennifer Winget Floral Embroidered Anarkali Kurta With Trouser & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 18,
@@ -276,7 +296,8 @@
       "bestseller": 4.3,
       "discount": 80,
       "description": "Women Green Yoke Design Regular Kurta with Palazzos & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 19,
@@ -291,7 +312,8 @@
       "bestseller": 4,
       "discount": 79,
       "description": "Floral Zari Embroidered Chanderi Silk Kurta With Trouser & Sequined Dupatta.",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     },
     {
       "id": 20,
@@ -306,7 +328,8 @@
       "bestseller": 4.3,
       "discount": 76,
       "description": "Ethnic Motifs Printed V-Neck Pure Cotton A-Line Kurta with Palazzos & Dupatta",
-      "quantity": 1
+      "quantity": 1,
+      "category":"dress"
     }
   ]
 }

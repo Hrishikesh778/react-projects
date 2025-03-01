@@ -9,30 +9,32 @@ function Description() {
   let id = param.id
   console.log(param,"param")
 
-
-  let[addtocart1,setAddtocart1]=useState(false)
-  let[addtowish1,setaddtowish1]=useState(false)
-
   let [singleData, setsingleData] = useState([])
   let [image, setImage] = useState("")
 
-    useEffect(()=>{
-        axios.get(`http://localhost:5000/products/${id}`)
+  function getData(){
+    axios.get(`http://localhost:5000/products/${id}`)
         .then((resp)=>{
             console.log(resp.data,"resp  inside product desc")
             setsingleData([resp.data])
             setImage(resp.data.image[0])
         })
-    },[param])
+  }
+
+    useEffect(()=>{
+        getData()
+    },[param,singleData])
 
     console.log(singleData,"singleData")
 
 
     function addToCart(val){
       debugger
-      setAddtocart1(true)
+
+      
+      // setAddtocart1(true)
       console.log(val,"val")
-      let newData ={...val,addToCart:addtocart1}
+      let newData ={...val,addToCart:true, quantity: count}
       console.log(newData,"newdata")
 
         updateData(val.id,newData)
@@ -41,8 +43,10 @@ function Description() {
 
     function addtowish(val){
       debugger
-      setaddtowish1(true)
-      let newData={...val,addtowish:addtowish1}
+      // setaddtowish1(true)
+
+
+      let newData={...val,addtowish:true}
       console.log(newData,"wishlistnew data")
       updateData(val.id,newData)
     }
@@ -52,7 +56,7 @@ function Description() {
       .then((resp)=>{
         console.log(resp.data,"cart data")
       })
-
+      getData()
     }
 
   return (
