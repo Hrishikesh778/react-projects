@@ -82,6 +82,7 @@ function Category() {
         else {
             saree.checked = false;
             dress.checked = false;
+            all.checked=true;
             let filterData1 = apiData.map((val) => {
                 return val
 

@@ -44,7 +44,7 @@ function Nav() {
     function showSearchBox(e) {
         setData(e.target.value)
         // debugger
-        if (pathname=="/" || pathname=="/category") {
+        if (pathname=="/") {
 
             // document.getElementById('pp').style.display = "block"
             ref1.current.style.display="none"
