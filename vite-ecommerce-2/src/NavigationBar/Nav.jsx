@@ -44,7 +44,7 @@ function Nav() {
     function showSearchBox(e) {
         setData(e.target.value)
         // debugger
-        if (pathname=="/") {
+        if (pathname=="/" || pathname=="/category") {
 
             // document.getElementById('pp').style.display = "block"
             ref1.current.style.display="none"
@@ -70,6 +70,10 @@ function Nav() {
                 <li>
 
                     <Link to="/wishlist" className="link">Wishlist</Link>
+                </li>
+                <li>
+
+                    <Link to="/category" className="link">Category</Link>
                 </li>
                 <li>
                     {/* <div className="Serdiv">

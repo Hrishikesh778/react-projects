@@ -39,16 +39,7 @@ function Product() {
 
   return (
     <div>
-      <div>
-        <input type="checkbox" value="" id="3" onclick="clothfilter('all')" />
-        <label for="3">All</label> 
-
-        <input type="checkbox" name="cloth" value="" id="1" onclick="clothfilter('dress')" />
-        <label for="1">Dress</label> 
-
-        <input type="checkbox" name="cloth" value="" id="2" onclick="clothfilter('sarees')" />
-        <label for="2">Sarees</label>
-      </div>
+   
       <h1>Product</h1>
       <div className='boxContainer'>
         {
