@@ -40,7 +40,7 @@ function Product() {
   return (
     <div>
    
-      <h1>Product</h1>
+      <h1 className='headdingp'>Products</h1>
       <div className='boxContainer'>
         {
           filterData.map((val) => {
@@ -51,6 +51,8 @@ function Product() {
                   <div className='box'>
                     <img src={val.image[0]} alt="" />
                     <p>{val.name}</p>
+                    <p>₹{val.price}</p>
+                    <p>{val.discount}% OFF</p>
                   </div>
                 </Link>
               </>

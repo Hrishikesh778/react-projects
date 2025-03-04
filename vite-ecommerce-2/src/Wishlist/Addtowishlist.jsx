@@ -40,7 +40,7 @@ function Addtowishlist() {
     return (
 
         <>
-            <h1>Wishlist</h1>
+            <h1 className="headdingp">Wishlist</h1>
             <div className="addtowmaindiv">
                 {
                     wishlist.map((val) => {
@@ -50,7 +50,7 @@ function Addtowishlist() {
                                 <Link to={pp} className='link'>
                                     <div className="addtocartwish">
                                         <h1>{val.name}</h1>
-                                        <button onClick={() => { removeFromwish(val) }}>Remove</button>
+                                        <button className="btnremove" onClick={() => { removeFromwish(val) }}>Remove</button>
                                     </div>
                                 </Link>
                             </>

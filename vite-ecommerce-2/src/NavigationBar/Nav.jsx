@@ -6,7 +6,7 @@ import { Link, useLocation, useParams } from "react-router-dom"
 import FetchApi from "../CustomHook/useFetchApi"
 
 function Nav() {
-    let ref1=useRef();
+    let ref1 = useRef();
     let { setData, data } = useContext(createStore)
     let [apiData, setApiData] = useState([])
     let [filterData, setFilterData] = useState([])
@@ -44,66 +44,72 @@ function Nav() {
     function showSearchBox(e) {
         setData(e.target.value)
         // debugger
-        if (pathname=="/") {
+        if (pathname == "/") {
 
             // document.getElementById('pp').style.display = "block"
-            ref1.current.style.display="none"
+            ref1.current.style.display = "none"
 
         } else {
             // setData(e.target.value)
             // document.getElementById('pp').style.display = "none"
-             ref1.current.style.display="block"
+            ref1.current.style.display = "block"
         }
     }
 
     return (
         <div className="Navb">
-            <ul>
-                <li>
-                    <Link to="/" className='link'> Home</Link>
+            <div>
+                <ul>
+                    <li>
+                        <Link to="/" className='link'> Home</Link>
 
-                </li>
-                <li>
+                    </li>
+                    <li>
 
-                    <Link to="/cart" className="link">Cart</Link>
-                </li>
-                <li>
+                        <Link to="/cart" className="link">Cart</Link>
+                    </li>
+                    <li>
 
-                    <Link to="/wishlist" className="link">Wishlist</Link>
-                </li>
-                <li>
+                        <Link to="/wishlist" className="link">Wishlist</Link>
+                    </li>
+                    <li>
 
-                    <Link to="/category" className="link">Category</Link>
-                </li>
-                <li>
-                    {/* <div className="Serdiv">
+                        <Link to="/category" className="link">Category</Link>
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <div className="navsearch">
+                {/* <div className="Serdiv">
                         <div className="row"> */}
-                    <input type="search" onChange={(e) => { showSearchBox(e) }} />
-                    {
-                        filterData != "" ?
-                            <div ref={ref1} className='searchBox' id='pp'>
-                                <ul className="searchdul">
-                                    {
-                                        filterData.map((val) => {
-                                            var pp = `productdesc/${val.id}`
-                                            return (
-                                                <>
-                                                    <Link to={pp} className='link'>
-                                                        <li>{val.name}</li>
-                                                    </Link>
-                                                </>
-                                            )
-                                        })
-                                    }
-                                </ul>
-                            </div>
+                <input type="search" onChange={(e) => { showSearchBox(e) }} placeholder="Search" />
+                {
+                    filterData != "" ?
+                        <div ref={ref1} className='searchBox' id='pp'>
+                            <ul className="searchdul">
+                                {
+                                    filterData.map((val) => {
+                                        var pp = `productdesc/${val.id}`
+                                        return (
+                                            <>
+                                                <Link to={pp} className='link'>
+                                                    <li>{val.name}</li>
+                                                </Link>
+                                            </>
+                                        )
+                                    })
+                                }
+                            </ul>
+                        </div>
 
-                            : <div className='searchBox' style={{ display: "none" }} id='pp'></div>
-                    }
+                        : <div className='searchBox' style={{ display: "none" }} id='pp'></div>
+                }
 
 
 
-                    {/* </div>
+                {/* </div>
                         
 
                         {(filterData == "") ? <div className="result-box" style={{ display: "none" }}> </div> :
@@ -131,9 +137,7 @@ function Nav() {
                             </>
                         }
                     </div> */}
-                </li>
-            </ul>
-
+            </div>
         </div>
     )
 

@@ -6,7 +6,7 @@ function ProviderFunction({ children }) {
 
     return (
         <>
-            <h1>Provider Function</h1>
+            {/* <h1>Provider Function</h1> */}
             <createStore.Provider value={{data,setData}}>
                 {children}
             </createStore.Provider>

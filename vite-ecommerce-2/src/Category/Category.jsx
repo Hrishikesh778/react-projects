@@ -77,6 +77,18 @@ function Category() {
                 console.log(result,"result")
                 setFilterData(result)
             }
+            else {
+                saree.checked = false;
+                dress.checked = false;
+                all.checked=true;
+                let filterData1 = apiData.map((val) => {
+                    return val
+    
+                })
+                console.log(filterData1, "filterData1")
+                setFilterData(filterData1)
+    
+            }
 
         }
         else {
@@ -108,17 +120,18 @@ function Category() {
 
         return (
             <div>
+                
+                <h1 className="headdingp">Category</h1>
                 <div>
                     <input ref={refall} type="checkbox" value="" id="3" onClick={() => { clothfilter("all") }} />
-                    <label for="3">All</label>
+                    <label for="3">All</label>&nbsp;&nbsp;&nbsp;
 
                     <input ref={refdress} type="checkbox" name="cloth" value="" id="1" onClick={() => { clothfilter("dress") }} />
-                    <label for="1">Dress</label>
+                    <label for="1">Dress</label>&nbsp;&nbsp;&nbsp;
 
                     <input ref={refsaree} type="checkbox" name="cloth" value="" id="2" onClick={() => { clothfilter("saree") }} />
-                    <label for="2">Sarees</label>
+                    <label for="2">Sarees</label>&nbsp;&nbsp;&nbsp;
                 </div>
-                <h1>Product</h1>
                 <div className='boxContainer'>
                     {
                         filterData.map((val) => {
@@ -129,6 +142,8 @@ function Category() {
                                         <div className='box'>
                                             <img src={val.image[0]} alt="" />
                                             <p>{val.name}</p>
+                                            <p>₹{val.price}</p>
+                                            <p>{val.discount}% OFF</p>
                                         </div>
                                     </Link>
                                 </>

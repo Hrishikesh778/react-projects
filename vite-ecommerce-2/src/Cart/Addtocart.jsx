@@ -42,7 +42,7 @@ function Addtocart() {
 
     return (
         <>
-            <h1>Cart</h1>
+            <h1 className="headdingp">Cart</h1>
             <div className="addtocmaindiv">
             {
                 cart.map((val) => {
@@ -53,7 +53,7 @@ function Addtocart() {
                                 <div className="addtocartdiv">
                                     <h1>{val.name}</h1>
                                     <h1>{val.quantity}</h1>
-                                    <button onClick={() => { removeFromCart(val) }}>Remove</button>
+                                    <button className="btnremove" onClick={() => { removeFromCart(val) }}>Remove</button>
                                 </div>
                             </Link>
                         </>
