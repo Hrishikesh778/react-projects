@@ -135,7 +135,7 @@ function Category() {
                 <div className='boxContainer'>
                     {
                         filterData.map((val) => {
-                            var pp = `productdesc/${val.id}`
+                            var pp = `../productdesc/${val.id}`
                             return (
                                 <>
                                     <Link to={pp} className='link'>
