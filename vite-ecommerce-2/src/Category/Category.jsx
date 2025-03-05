@@ -4,6 +4,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import createStore from '../Context/createStore'
 import FetchApi from '../CustomHook/useFetchApi'
+// import "./Category.css"
 
 function Category() {
     let [apiData, setApiData] = useState([])
@@ -138,6 +139,7 @@ function Category() {
                             var pp = `../productdesc/${val.id}`
                             return (
                                 <>
+                                <div className='maindivlink'>
                                     <Link to={pp} className='link'>
                                         <div className='box'>
                                             <img src={val.image[0]} alt="" />
@@ -146,6 +148,7 @@ function Category() {
                                             <p>{val.discount}% OFF</p>
                                         </div>
                                     </Link>
+                                    </div>
                                 </>
                             )
                         })

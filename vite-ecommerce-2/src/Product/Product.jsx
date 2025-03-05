@@ -47,6 +47,7 @@ function Product() {
             var pp = `productdesc/${val.id}`
             return (
               <>
+              <div className='maindivlink'>
                 <Link to={pp} className='link'>
                   <div className='box'>
                     <img src={val.image[0]} alt="" />
@@ -55,6 +56,7 @@ function Product() {
                     <p>{val.discount}% OFF</p>
                   </div>
                 </Link>
+                </div>
               </>
             )
           })

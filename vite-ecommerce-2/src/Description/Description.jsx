@@ -23,7 +23,7 @@ function Description() {
 
   useEffect(() => {
     getData()
-  }, [param, singleData])
+  }, [param])
 
   console.log(singleData, "singleData")
 
@@ -55,8 +55,9 @@ function Description() {
     axios.put(`http://localhost:5000/products/${id}`, newData)
       .then((resp) => {
         console.log(resp.data, "cart data")
+        getData()
       })
-    getData()
+    
   }
 
   return (

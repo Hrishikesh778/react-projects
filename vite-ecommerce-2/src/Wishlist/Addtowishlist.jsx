@@ -47,12 +47,26 @@ function Addtowishlist() {
                         var pp = `../productdesc/${val.id}`
                         return (
                             <>
-                                <Link to={pp} className='link'>
+                                <div className="addtocartdiv">
+                                    <div className="imgaddtocart">
+                                        <Link to={pp} className='link'>
+                                            <img src={val.image[0]} alt="" />
+                                        </Link>
+                                    </div>
+                                    <div className="addtocartdiv2">
+                                        <h1>{val.name}</h1>
+                                        {/* <h1>Quantity:{val.quantity}</h1> */}
+                                    </div>
+                                    <div className="addtocartdiv3">
+                                    <button className="btnremove" onClick={() => { removeFromwish(val) }}>Remove</button>
+                                    </div>
+                                </div>
+                                {/* <Link to={pp} className='link'>
                                     <div className="addtocartwish">
                                         <h1>{val.name}</h1>
                                         <button className="btnremove" onClick={() => { removeFromwish(val) }}>Remove</button>
                                     </div>
-                                </Link>
+                                </Link> */}
                             </>
                         )
                     })

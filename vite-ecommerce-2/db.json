@@ -13,9 +13,9 @@
       "bestseller": 4.5,
       "discount": 50,
       "description": "Women Peach-Coloured Floral Kurta with Trousers & Dupatta",
-      "quantity": 9,
-      "addToCart": true,
-      "addtowish": true,
+      "quantity": 1,
+      "addToCart": false,
+      "addtowish": false,
       "category": "dress"
     },
     {
@@ -31,8 +31,8 @@
       "bestseller": 4.4,
       "discount": 76,
       "description": "Solid Beads and Stones Saree",
-      "quantity": 2,
-      "addtowish": false,
+      "quantity": 1,
+      "addtowish": true,
       "addToCart": true,
       "category": "saree"
     },
@@ -49,8 +49,8 @@
       "bestseller": 4.3,
       "discount": 79,
       "description": "Ethnic Motifs Embroidered Regular Thread Work Kurta with Salwar & Dupatta",
-      "quantity": 1,
-      "addToCart": false,
+      "quantity": 6,
+      "addToCart": true,
       "addtowish": false,
       "category": "dress"
     },
@@ -68,7 +68,7 @@
       "discount": 75,
       "description": "Bandhani Embroidered Regular Sequinned Kurta With Trouser & Dupatta",
       "quantity": 1,
-      "addToCart": true,
+      "addToCart": false,
       "addtowish": false,
       "category": "dress"
     },
@@ -187,7 +187,7 @@
       "quantity": 1,
       "category": "dress",
       "addtowish": false,
-      "addToCart": true
+      "addToCart": false
     },
     {
       "id": 12,
@@ -237,7 +237,7 @@
       "quantity": 1,
       "addToCart": false,
       "category": "dress",
-      "addtowish": true
+      "addtowish": false
     },
     {
       "id": 15,
@@ -270,7 +270,7 @@
       "description": "Regular Gotta Patti Kurta with Trousers & Dupatta",
       "quantity": 1,
       "category": "dress",
-      "addToCart": true,
+      "addToCart": false,
       "addtowish": true
     },
     {
@@ -288,7 +288,8 @@
       "description": "Jennifer Winget Floral Embroidered Anarkali Kurta With Trouser & Dupatta",
       "quantity": 1,
       "category": "dress",
-      "addtowish": false
+      "addtowish": false,
+      "addToCart": false
     },
     {
       "id": 18,

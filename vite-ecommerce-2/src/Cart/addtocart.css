@@ -1,8 +1,10 @@
 .addtocartdiv{
-    height: auto;
+    height: 200px;
     padding: 20px;
-    width: 200px;
+    width:50%;
     /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
     margin: 3px;
     border-radius: 25px;
 
@@ -15,6 +17,16 @@
     background: -webkit-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ebf4f5", endColorstr="#b5c6e0", GradientType=1 );
+}
+
+.addtocartdiv2{
+    text-align: center;
+    /* display: flex; */
+    align-self: center;
+}
+
+.addtocartdiv3{
+    align-self: center;
 }
 
 .addtocartdiv:hover{
@@ -38,5 +50,12 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 25px;
+    height: 150px;
+  }
+
+  .imgaddtocart img{
+    height: 100%;
+    width: 100%;
     border-radius: 25px;
   }
