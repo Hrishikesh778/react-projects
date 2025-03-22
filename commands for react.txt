@@ -1,0 +1,55 @@
+install node js
+check version
+
+node -v
+npm -v
+
+install cra
+npm I -g create-react-app
+
+to create project using cra
+
+npx create-react-app projectname
+
+
+
+
+
+to create project 
+npm create vite@latest
+
+
+react router dom
+npm i react-router-dom
+
+for tailwind vite:
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+https://v3.tailwindcss.com/docs/guides/vite
+
+
+to hide scrollbar
+https://www.npmjs.com/package/tailwind-scrollbar-hide
+
+
+
+font-awesome
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+other
+https://fakestoreapi.com/products
+https://jsonplaceholder.typicode.com/posts
+http://universities.hipolabs.com/search
+https://dog.ceo/api/breeds/image/random
+https://jsonplaceholder.typicode.com/users
+
+npm i react-router-dom
+npm i json-server@0.17.4
+
+npx json-server --watch db.json --port 5000
+
+npx json-server --watch db.json --port 3000
+
+npm i axios
+
+to import in file use --- import axios from "axios"
